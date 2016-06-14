@@ -1,0 +1,164 @@
+﻿<!DOCTYPE HTML>
+<html lang="en">
+<head>
+ 
+    <meta charset="utf-8">
+    <title>Houston Events</title>
+    <meta name="description" content="HidayatHasan.net web development design">
+    <meta name="author" content="HidayatHasan.net">
+ 
+
+ 
+    <!--css-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+ 
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="img/favicon.ico">
+	
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	
+	<script>
+		$(document).ready(function(){
+			$("#tab").hover(function(){
+				$("#tab").css("right","-40px");
+				$("#tab").css("opacity","1");
+				},function(){
+				$("#tab").css("right","-60px");
+				$("#tab").css("opacity","0.7");
+				}
+			);
+		});
+	
+$(function() {
+    $( "#menu" ).tooltip({
+      show: {
+        effect: "slideDown",
+        delay: 250
+		}
+		});
+	});
+	
+	$(function() {
+    $( "#menu2" ).tooltip({
+      show: {
+        effect: "slideDown",
+        delay: 250
+		}
+		});
+	});
+	
+	</script>
+ 
+ <!-- Google API for news feed -->
+ <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script src="http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.js" type="text/javascript"></script>
+
+<style type="text/css">
+@import url("http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.css");
+
+#feedControl {
+margin-top : 10px;
+margin-left: auto;
+margin-right: auto;
+width : 500px;
+font-size: 12px;
+color: #9CADD0;
+}
+
+#feedControl2 {
+margin-top : 10px;
+margin-left: auto;
+margin-right: auto;
+width : 500px;
+font-size: 12px;
+color: #9CADD0;
+}
+</style>
+<script type="text/javascript">
+function load() {
+var feed ="http://www.click2houston.com/-/1736084/5695744/-/format/rss_2.0/view/asFeed/-/x9mgi4z/-/index.xml";
+var feed2 ="http://feeds.feedburner.com/grouponhouston?format=xml";
+
+
+
+new GFdynamicFeedControl(feed, "feedControl");
+new GFdynamicFeedControl(feed2, "feedControl2");
+}
+google.load("feeds", "1");
+google.setOnLoadCallback(load);
+</script>
+ 
+ <!-- end of google api -->
+ 
+</head>
+<body>
+ 
+    <div id="wrapper" >
+		
+		<div id="logo"><img src="images/logo.png"  alt="HidayatHasan.net" ></div>
+		
+		<div id="tag">
+		<img  src="images/tag.png" width="200px" height="100px" >
+		</div>
+		<div><a id="menu" href="#" title="Click here for our featured Dishes">MENU</a></div>
+		
+		<div id="header"> <h1>Houston Food Events</h1>
+		</div>
+		
+	
+		
+		<div id="tab">
+
+		<a href="#"><img src="images/facebook.png" width="50px" height="50px"></a>
+		<br/>
+		<a href="#"><img src="images/twitter.png" width="50px" height="50px"></a>
+		</div>
+	 
+		<div class="container">
+		<h2><div class="title">About Our Sponsors</div></h2>
+		<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, enim.</p>
+		<a href="#"><img src="images/sp1.png" width="150px" height="100px"></a>
+		<a href="#"><img src="images/sp2.png" width="150px" height="100px"></a>
+		<a href="#"><img src="images/logo.png" width="150px" height="100px"></a>
+		</div>
+		
+		<div class="container">
+		<h2><div class="title">Our Events Gallery</div></h2>
+		<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, enim.</p>
+		<a id="menu2" title="Our delicious pictures" href="#">Read more</a>
+		</div>
+		
+		<div class="container">
+		<h2><div class="title">Our location</div></h2>
+		
+		 <iframe width="300" height="200" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=The+Westin+Galleria+Houston,+West+Alabama+Street,+Houston,+TX&amp;aq=0&amp;oq=galleria+houston&amp;sll=30.368506,-97.711255&amp;sspn=0.363159,0.562363&amp;ie=UTF8&amp;hq=&amp;hnear=&amp;t=m&amp;ll=29.740141,-95.464132&amp;spn=0.005589,0.006437&amp;z=16&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=The+Westin+Galleria+Houston,+West+Alabama+Street,+Houston,+TX&amp;aq=0&amp;oq=galleria+houston&amp;sll=30.368506,-97.711255&amp;sspn=0.363159,0.562363&amp;ie=UTF8&amp;hq=&amp;hnear=&amp;t=m&amp;ll=29.740141,-95.464132&amp;spn=0.005589,0.006437&amp;z=16" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+		 
+		<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, enim.</p>
+		</div>
+		
+		<div class="container">
+		<h2><div class="title">Our Local News & Deals</div></h2>
+		
+		 
+		<div id="feedControl">Loading...</div>
+		<br/>
+		<div id="feedControl2">Loading...</div>
+		
+		</div>
+	 
+		<br/><br/>
+			
+    </div><!--end wrapper-->
+	<div id="footnote">
+	<a href="http://www.HidayatHasan.net" target="_blank">Copyright © 2013 HidayatHasan.net</a>
+	</div>
+
+     
+</body>
+</html>
